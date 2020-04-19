@@ -1,0 +1,6 @@
+<div>
+    <input type="text" name="content" [(ngModel)]="plan.content" placeholder="Visit temple">
+    <button (click)="onUpdate(plan)">Update</button>
+    <button (click)="onDelete(plan.id)">Delete</button>
+    <span> Updated - {{plan.updatedAt | date:'short'}} </span>
+</div>

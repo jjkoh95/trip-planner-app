@@ -1,0 +1,12 @@
+<app-create-plan
+    [tripID]="tripID"
+    (createPlan)="createPlan($event)"
+>
+</app-create-plan>
+<app-plan-item
+    *ngFor="let plan of plans"
+    [plan]="plan"
+    (deletePlan)="deletePlan($event)"
+    (updatePlan)="updatePlan($event)"
+    >
+</app-plan-item>

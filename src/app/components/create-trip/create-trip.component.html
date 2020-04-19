@@ -1,0 +1,5 @@
+<form (ngSubmit)="onSubmit()">
+    <input type="text" name="title" [(ngModel)]="trip.title" placeholder="Bangkok Trip">
+    <input type="text" name="description" [(ngModel)]="trip.description" placeholder="Food trip">
+    <input type="submit" value="Create">
+</form>

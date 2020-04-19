@@ -1,0 +1,8 @@
+<div>
+    <input type="text" name="title" [(ngModel)]="trip.title" placeholder="Bangkok Trip">
+    <input type="text" name="description" [(ngModel)]="trip.description" placeholder="Food trip">
+    <button (click)="onUpdate(trip)">Update</button>
+    <button (click)="onDelete(trip.id)">Delete</button>
+    <button mat-raised-button (click)="openPlanDialog(trip.id)">Plan</button>
+    <span> Updated - {{trip.updatedAt | date:'short'}} </span>
+</div>

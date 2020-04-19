@@ -1,0 +1,9 @@
+<app-create-trip (createTrip)="createTrip($event)">
+</app-create-trip>
+<app-trip-item
+    *ngFor="let trip of trips"
+    [trip]="trip"
+    (deleteTrip)="deleteTrip($event)"
+    (updateTrip)="updateTrip($event)"
+    >
+</app-trip-item>
